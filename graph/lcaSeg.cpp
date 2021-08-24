@@ -29,7 +29,7 @@ struct Tree{
         first[x] = euler.size();
         euler.push_back(x);
         for(auto to : arvore[x]){
-            if(!visited[x]){
+            if(!visited[to]){
                 dfs(to, h+1);
                 euler.push_back(x);
             }
