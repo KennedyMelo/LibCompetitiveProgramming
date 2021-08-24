@@ -1,6 +1,6 @@
 struct Kruskal: DSU{
     vector<pair<int, ii>>arestas;
-    
+    Kruskal(int n): DSU(n){}
     void solve(vector<pair<int, ii>>&x){
         arestas= x;
         sort(arestas.begin(), arestas.end());

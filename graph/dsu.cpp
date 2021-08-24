@@ -3,10 +3,10 @@ struct DSU{
     vector<int> pai, alt;
     int n;
     DSU(int nTam){
-        pai.resize(nTam+1);
-        alt.resize(nTam+1);
-        int n= nTam;
-        forc(i,1,nTam){
+        n = nTam;
+        pai.resize(n+1);
+        alt.resize(n+1);
+        forc(i,1,n+1){
             pai[i]=i;
             alt[i]=1;
         }
